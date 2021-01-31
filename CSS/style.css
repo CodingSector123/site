@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --text-hover-color: rgb(255, 72, 0);
+    --text-h1-color: rgb(92, 92, 92);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.navbar{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.nav-links{
+    display: flex;
+}
+.nav-a{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.nav-link-a{
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown{
+    list-style: none;
+}
+
+.dropdown-item:hover{
+    background: var(--text-hover-color);
+    color: white;
+    transition: all 0.6s ease-in-out;
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+}
+
+.banner{
+    display: flex;
+    margin-top: 50px;
+    border-bottom: black 2px solid;
+}
+.right-col img {
+    border: black 2px solid;
+    border-radius: 200px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.left-col h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    /* color: var(--text-h1-color); */
+    margin-top: 30px;
+}
+
+.left-col p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.recent-posts-h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 805px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+        margin-left: 0;
+        margin-top: 40px;
+        background-position: center;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+        margin-left: 0;
+        margin-top: 40px;
+        background-position: center;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 586px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+        width: 350px;
+        margin-top: 40px;
+        margin-right: 40px;
+        background-position: center;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 799px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+       width: 300px;
+        margin-top: 40px;
+        margin-right: 0px;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 999px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+        margin-left: 200px;
+        margin-top: 40px;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 686px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .right-col img{
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    .left-col{
+        margin: 0;
+    }
+}
