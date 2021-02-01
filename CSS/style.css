@@ -65,30 +65,9 @@ body{
     font-family: 'Teko', sans-serif;
     letter-spacing: 1.5px;
     font-size: 35px;
+    float: left;
 }
 
-.banner{
-    display: flex;
-    margin-top: 50px;
-    border-bottom: black 2px solid;
-}
-.right-col img {
-    border: black 2px solid;
-    border-radius: 200px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-
-.left-col h1{
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 100;
-    /* color: var(--text-h1-color); */
-    margin-top: 30px;
-}
-
-.left-col p{
-    font-family: 'Ubuntu', sans-serif;
-}
 
 .recent-posts-h1{
     font-family: 'Bebas Neue', cursive;
@@ -100,31 +79,11 @@ body{
     .navbar{
         flex-direction: column;
     }
-    .banner{
-        flex-direction: column;
-    }
-    .right-col img{
-        margin-top: 40px;
-        margin-left: 100px;
-    }
-    .left-col{
-        margin: 0;
-    }
 }
 
 @media screen and (max-width: 805px){
     .navbar{
         flex-direction: column;
-    }
-    .banner{
-        flex-direction: column;
-    }
-    .right-col img{
-        margin-top: 40px;
-        margin-left: 50px;
-    }
-    .left-col{
-        margin: 0;
     }
 }
 
@@ -132,96 +91,196 @@ body{
     .navbar{
         flex-direction: column;
     }
-    .banner{
+}
+
+@media screen and (max-width: 300px){
+    .navbar{
         flex-direction: column;
     }
-    .right-col img{
-        margin-left: 0;
-        margin-top: 40px;
-        background-position: center;
-    }
-    .left-col{
+    .container{
         margin: 0;
     }
+    /* .nav-links{
+    position: fixed;
+    background: #ffffff;
+    height: 110vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    } */
+    .nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+    .nav-links li{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .line {
+    width: 20px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
 }
 
 @media screen and (max-width: 400px){
     .navbar{
         flex-direction: column;
     }
-    .banner{
-        flex-direction: column;
-    }
-    .right-col img{
-        margin-left: 0;
-        margin-top: 40px;
-        background-position: center;
-    }
-    .left-col{
+    .container{
         margin: 0;
     }
+    .nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+    }
+    /* .nav-links{
+    position: fixed;
+    background: #ffffff;
+    height: 110vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    } */
+    .nav-links li{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .line {
+    width: 20px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+    .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
 }
 
 @media screen and (max-width: 586px){
     .navbar{
         flex-direction: column;
     }
-    .banner{
-        flex-direction: column;
-    }
-    .right-col img{
-        width: 350px;
-        margin-top: 40px;
-        margin-right: 40px;
-        background-position: center;
-    }
-    .left-col{
+    .container{
         margin: 0;
     }
+    .nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+    /* .nav-links{
+    position: fixed;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    height: 110vh;
+    width: 100%;
+    flex-direction: column;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    } */
+    .nav-links li{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .line {
+    width: 20px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+    .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+ 
+  .nav-links {
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
 }
 @media screen and (max-width: 799px){
     .navbar{
         flex-direction: column;
-    }
-    .banner{
-        flex-direction: column;
-    }
-    .right-col img{
-       width: 300px;
-        margin-top: 40px;
-        margin-right: 0px;
-    }
-    .left-col{
-        margin: 0;
     }
 }
 @media screen and (max-width: 999px){
     .navbar{
         flex-direction: column;
     }
-    .banner{
-        flex-direction: column;
-    }
-    .right-col img{
-        margin-left: 200px;
-        margin-top: 40px;
-    }
-    .left-col{
-        margin: 0;
-    }
 }
 @media screen and (max-width: 686px){
     .navbar{
         flex-direction: column;
-    }
-    .banner{
-        flex-direction: column;
-    }
-    .right-col img{
-        margin-left: 50px;
-        margin-top: 40px;
-    }
-    .left-col{
-        margin: 0;
     }
 }
