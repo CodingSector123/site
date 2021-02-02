@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --text-hover-color: rgb(255, 72, 0);
+    --text-h1-color: rgb(92, 92, 92);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.navbar{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.nav-links{
+    display: flex;
+}
+.nav-a{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.nav-link-a{
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown{
+    list-style: none;
+}
+
+.dropdown-item:hover{
+    background: var(--text-hover-color);
+    color: white;
+    transition: all 0.6s ease-in-out;
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+    float: left;
+}
+
+.banner-h1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.banner-text{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.banner-img{
+    border: black solid 2px;
+}
+
+.recent-posts-h1{
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.post{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.post-text{
+    margin: 30px;
+}
+
+.post-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 30px;
+}
+
+.post-summary{
+    margin-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 30vw;
+}
+
+.post-img img{
+    width: 30vw;
+}
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 805px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .navbar{
+        flex-direction: column;
+    }
+    .container{
+        margin: 0;
+    }
+    .nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+    .nav-links li{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .line {
+    width: 20px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #ffffff;
+    margin-top: 0px;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .post{
+      flex-direction: column;
+  }
+  .post-img img{
+      width: 60vw;
+      height: 40vh;
+  }
+  .post-summary{
+      width: 40vw;
+  }
+}
+
+@media screen and (max-width: 400px){
+    .navbar{
+        flex-direction: column;
+    }
+    .container{
+        margin: 0;
+    }
+    .nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+    }
+    .nav-links li{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .line {
+    width: 20px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+    .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #ffffff;
+    margin-top: 0px;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .post{
+      flex-direction: column;
+  }
+  .post-img img{
+      width: 60vw;
+      height: 40vh;
+  }
+  .post-summary{
+      width: 40vw;
+  }
+}
+
+@media screen and (max-width: 586px){
+    .navbar{
+        flex-direction: column;
+    }
+    .container{
+        margin: 0;
+    }
+    .nav-link-a:hover, .nav-a:hover{
+    color: var(--text-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+    .nav-links li{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    .line {
+    width: 20px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+    .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+ 
+  .nav-links {
+    position: fixed;
+    margin-top: 0px;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .post{
+      flex-direction: column;
+  }
+  .post-img img{
+      width: 60vw;
+      height: 40vh;
+  }
+  .post-summary{
+      width: 40vw;
+  }
+}
+@media screen and (max-width: 799px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 999px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 686px){
+    .navbar{
+        flex-direction: column;
+    }
+}
