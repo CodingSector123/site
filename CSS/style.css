@@ -187,6 +187,9 @@ body{
   .post-summary{
       width: 40vw;
   }
+  .post-img{
+      display: none;
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -246,6 +249,9 @@ body{
   .post-summary{
       width: 40vw;
   }
+  .post-img{
+      display: none;
+  }
 }
 
 @media screen and (max-width: 586px){
@@ -304,6 +310,9 @@ body{
   }
   .post-summary{
       width: 40vw;
+  }
+  .post-img{
+      display: none;
   }
 }
 @media screen and (max-width: 799px){
