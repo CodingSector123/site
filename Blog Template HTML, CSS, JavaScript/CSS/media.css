@@ -39,9 +39,12 @@
 
 }
 
-@media screen and (max-width: 300px){
-    .navbar{
-        flex-direction: column;
+@media screen and (max-width: 399px){
+    .recent-posts-h1{
+        display: none;
+    }
+    .post-img img{
+        height: 100vh;
     }
 }
 
