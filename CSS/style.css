@@ -31,32 +31,84 @@
     font-style: normal; 
 }
 
-@media (max-width: 400px){
+@media (max-width: 468px){
     .text{
-        margin-left: 30px;
+        margin-left: 50px;
         margin-top: 50px;
     }
     .title{
         text-align: center;
     }
-    .banner .btn{
-        margin-left: 100px;
+    .banner{
+        text-align: center;
     }
     .img img{
-        padding-right: 30px;
+        margin-left: 0px;
+        width: 85vw;
+        height: 45vh;
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 368px){
     .text{
-        margin-left: 30px;
+        margin-left: 50px;
         margin-top: 50px;
     }
     .title{
         text-align: center;
     }
-    .banner .btn{
-        margin-left: 100px;
+    .banner{
+        text-align: center;
+    }
+    .img img{
+        margin-left: 0px;
+        width: 85vw;
+        height: 45vh;
+    }
+}
+@media (max-width:668px){
+    .text{
+        margin-left: 40px;
+        margin-top: 50px;
+        padding-right: 30px;
+    }
+    .title{
+        text-align: center;
+    }
+    .banner{
+        text-align: center;
+    }
+    .img img{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 550px){
+    .text{
+        padding-left: 10px;
+        margin-top: 50px;
+    }
+    .banner{
+        text-align: center;
+    }
+    .title{
+        text-align: center;
+    }
+    .img img{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px){
+    .text{
+        margin-left: 70px;
+        margin-top: 50px;
+        width: 70vw;
+    }
+    .title{
+        text-align: center;
+    }
+    .banner{
+        text-align: center;
     }
     .img img{
         margin-left: 0px;
